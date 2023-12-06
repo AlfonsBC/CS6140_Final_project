@@ -13,7 +13,7 @@ There is a myriad of in-silico tools which design is motivated by the discovery 
 
 In short, the motivation of this project is to find the dependence between two lines of evidence and test the hypothesis that two or more lines of evidence in the code **PP3, BP$** cannot be considered to be the sum of individuals contributions.
 
-## Setup.
+## Experimentation.
 ---
 ### Modelling
 The aim of this research project is to measure to what extent their predictions can be considered independent pieces of evidence or not, using a Bayesian approach with positive likelihood ratio. We will model the $LR^{+}$ using a two different approaches but in essence relaying on Prabiblistic principles. A Probabilistic Graphical Model approach, in particular Bayesian Belief Networks and the second is a Bayes Rule Analysis, which basically is applying the Bayes Rule. Moreover, this project aims to understand the role it plays to the pathogenicity and the in-silico tools predictions in terms of a Latent Variable Model. According to the compact representation for the set of _conditional independencies_ in Bayesian Networks denoted by $\mathcal{I}_{\ell}(\mathcal{G})$, where for each variable $X_i$
@@ -22,5 +22,27 @@ $$(X_i \perp NonDescendants_{X_i} | Pa^{\mathcal{G}}_{X_i})$$
 
 Thus, adding a hidden variable acording to expert knowledge will make the contributions from each in-silico predictors independent given the hidden variable, but they will be dependent from both the Latent Variable and the Pathogenicity $Y$ variable. This approach we are going to use using a Latent Variable Model via _Expectation Maximization Algorithm_. The parameters to be learned are the _Conditional Probability Tables_ for each random variable. We are learning a model wth four discrete random variables $Y, L, SAI, REVEL$ as we see in the image bellow.
 
+### Data set
+--
+
+
+### Results
+---
+
+
+### Discussion
+---
+
+
+### Conclusion
+---
+
+
+### Relevance to the Course
+---
+1. Project documentation 
+
+### References
+---
 
 
