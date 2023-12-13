@@ -25,9 +25,30 @@ Thus, adding a hidden variable acording to expert knowledge will make the contri
 ### Data set
 --
 
+To perform this project, we needed to obtain a data set to predict pathogenicity according to a strict protocol that clinicians and researchers had agreed to which are the following:
+
+1. ClinVar variants from 2020 and 2023. There was some processing to be done to the data to have nearly $970,000$ variants in nearly $18,000$ genes. 
+2. Then, we keep non-VUS variants with a star rating greater than 1. The number of variants are $81,000$ in $10,661$ genes
+3. Then we remove variants in genes containning only benign variants. Because there were genes that had great density of benign variant rather than pathogenic. After this process we got around $44,629$ variants in $1,629$ genes
+4. Then we remove variants with an _Allele Frequency_ greater or equal than $0.01$. For this, we use the gnomAD data set which provides us of those variants that are common in the population. Thus, we will be obtaining the variants that are rare in the population. That means we got nearly $43,361$ variants for $1,629$ genes
+5. Obtain REVEL scores which is an Ensemble method that outputs the prediction combining multiple predictors.  This reduces to have nearly $42,572$ variants in $1,603$ genes
+6. Finally, we obtain the probabili of Splicing using the Neural Network tool via SpliceAI tool. This in the end gives us close to $42,013$ variants and $1,584$ genes
+
+In the end, we obtain nearly $21,311$ _Pathogenic/Likely pathogenic variants_ and $20,702$ _Benign/Likely benign_ variants. This leads to have a prevalence of pathogenicty close to half percent. Nevertheless, this is not the correct to calculate the prior, that is why we followed closely the literature review with Pejaver et. al. that calculated the prevalence of pathogenicty to be $0.0441$.
+
 
 ### Results
 ---
+We compared the Bayesian Network method with the classical Machine Learning Models for Binary Classification such as the following methods:
+
+- Logistic Regression
+- Naive Bayes
+- KNearest Neighbors
+- Support Vector Machine 
+- Decision Tree
+- Multi Layer Perceptron 
+- Bayesian Network Latent Variable Model
+- Bayesian Networks
 
 
 ### Discussion
@@ -37,9 +58,6 @@ Thus, adding a hidden variable acording to expert knowledge will make the contri
 ### Conclusion
 ---
 
-
-### Relevance to the Course
----
 1. Project documentation 
 
 ### References
