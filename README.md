@@ -65,7 +65,7 @@ We can add more in the discussion, but a quick intuition that this is one of the
 
 Given the literature review such as [Tavtigian et. al 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6336098/)  and [Pejaver et. al 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9748256/), the probabilistic bayesian approach to quantify the strength of evidence is given by the formula:
 
-![equation](https://latex.codecogs.com/svg.image?&space;LR^&plus;(\mathbf{X}=x)=\frac{\text{posterior&space;odds&space;of&space;pathogenicity}}{\textrm{prior&space;odds&space;of&space;pathogenicity}})
+![equation](https://latex.codecogs.com/svg.image?&space;LR^&plus;(\mathbf{X}=x)=\frac{\text{posterior&space;odds&space;of&space;pathogenicity}}{\textrm{prior&space;odds&space;of&space;pathogenicity}}=\frac{\displaystyle\frac{P(Y=1|\mathbf{X}=x)}{1-P(Y=1|\mathbf{X}=x)}}{\displaystyle\frac{P(Y=1)}{1-P(Y=1)})
 
 
 - Bayes Rule Analysis
