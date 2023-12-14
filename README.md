@@ -95,6 +95,12 @@ The results that we had obtained from the Bayesian Network perspective following
 1. Tavtigian SV, Greenblatt MS, Harrison SM, Nussbaum RL, Prabhu SA, Boucher KM, Biesecker LG; ClinGen Sequence Variant Interpretation Working Group (ClinGen SVI). [Modeling the ACMG/AMP variant classification guidelines as a Bayesian classification framework.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6336098/) Genet Med. 2018 Sep;20(9):1054-1060. doi: 10.1038/gim.2017.210. Epub 2018 Jan 4. PMID: 29300386; PMCID: PMC6336098. 
 2. Pejaver V, Byrne AB, Feng BJ, Pagel KA, Mooney SD, Karchin R, O'Donnell-Luria A, Harrison SM, Tavtigian SV, Greenblatt MS, Biesecker LG, Radivojac P, Brenner SE; [ClinGen Sequence Variant Interpretation Working Group. Calibration of computational tools for missense variant pathogenicity classification and ClinGen recommendations for PP3/BP4 criteria.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9748256/) Am J Hum Genet. 2022 Dec 1;109(12):2163-2177. doi: 10.1016/j.ajhg.2022.10.013. Epub 2022 Nov 21. PMID: 36413997; PMCID: PMC9748256.
 3. Nir Friedman. 1997. [Learning Belief Networks in the Presence of Missing Values and Hidden Variables.](https://dl.acm.org/doi/10.5555/645526.657145) In Proceedings of the Fourteenth International Conference on Machine Learning (ICML '97). Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 125–133.
+4. Lauritzen, S.L., 1995. [The EM algorithm for graphical association models with missing data.](https://www.stats.ox.ac.uk/~steffen/papers/em95.pdf)Computational statistics & data analysis, 19(2), pp.191-201.
+5. Packages:
+- [bnlearn](https://www.bnlearn.com):  Bayesian Networks in R 
+- [sklearn](https://scikit-learn.org/stable/): Machine Learning in Python
+- [causalnex](https://causalnex.readthedocs.io/en/latest/01_introduction/01_introduction.html): Combining Machine Learning and Bayesian networks for causal reasoning.
+ 
 
 
 
