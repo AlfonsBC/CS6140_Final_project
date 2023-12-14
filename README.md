@@ -79,8 +79,8 @@ Given the literature review such as [Tavtigian et. al 2018](https://www.ncbi.nlm
 ![Latent_newtork](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/BN_proposed.png?raw=true)
 
 
-The results that we had obtained from the Bayesian Network perspective following the Bayesian approach from Tavtigian et al. 2018, gives us understanding in each of the pieces of evidence given the revel score and provide with scores SpliceAI and Revel, where in different regions the sum of their contributions are independent, but in other regions their sum of their points is not equal to the contributed by both. Meaning that this regions are dependent. In the following image, we plot the main results from our Bayesian Network perspective:
-![Main_results](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/results.jpg?raw=true)
+The results that we had obtained from the Bayesian Network perspective following the Bayesian approach from Tavtigian et al. 2018, gives us understanding in each of the pieces of evidence given the REVEL score and provide with scores SpliceAI to predict Pathogenicity, where in different regions the sum of their contributions are independent, but in other regions their sum of their points is not equal to the contributed by both. Meaning that this regions are dependent. In the following image, we plot the main results from our Bayesian Network perspective:
+![Main_results](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/results.png?raw=true)
 
 ## Discussion
 ---
@@ -92,5 +92,10 @@ The results that we had obtained from the Bayesian Network perspective following
 
 ## References
 ---
+1. Tavtigian SV, Greenblatt MS, Harrison SM, Nussbaum RL, Prabhu SA, Boucher KM, Biesecker LG; ClinGen Sequence Variant Interpretation Working Group (ClinGen SVI). [Modeling the ACMG/AMP variant classification guidelines as a Bayesian classification framework.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6336098/) Genet Med. 2018 Sep;20(9):1054-1060. doi: 10.1038/gim.2017.210. Epub 2018 Jan 4. PMID: 29300386; PMCID: PMC6336098. 
+2. Pejaver V, Byrne AB, Feng BJ, Pagel KA, Mooney SD, Karchin R, O'Donnell-Luria A, Harrison SM, Tavtigian SV, Greenblatt MS, Biesecker LG, Radivojac P, Brenner SE; [ClinGen Sequence Variant Interpretation Working Group. Calibration of computational tools for missense variant pathogenicity classification and ClinGen recommendations for PP3/BP4 criteria.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9748256/) Am J Hum Genet. 2022 Dec 1;109(12):2163-2177. doi: 10.1016/j.ajhg.2022.10.013. Epub 2022 Nov 21. PMID: 36413997; PMCID: PMC9748256.
+3. Nir Friedman. 1997. [Learning Belief Networks in the Presence of Missing Values and Hidden Variables.](https://dl.acm.org/doi/10.5555/645526.657145) In Proceedings of the Fourteenth International Conference on Machine Learning (ICML '97). Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 125–133.
+
+
 
 
