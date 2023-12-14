@@ -51,15 +51,25 @@ To understand the importance of this project, we first provided of code in the f
 
 We fitted the models with bootstrap data according to reality, to understand the importance of this problem in the area of Machine Learning. First, we use nearly $496,831$ number of boostrap variants to the before mentioned models, and obtained the following results using a standard approach of train/test split of $70\%$ and $30\%$ :
 
+- The model that had the worst accuracy was the Naive Bayes approach where it has the naive hypothesis that the two scores Revel and SpliceAI are independent of each other. The rest three models were marginally close in accuracy in both train/test set nearly to $97\%$.
+
 ![Train/Test Accuracy Model Comparison](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/accuracy_comparison.png?raw=true)
 
+- Nevertheless, when comparing their respectives confusion matrices, Naive Bayes model approach was the one that obtained the greatest True Positive in the test set with $54\%$, the rest of the models were close to the $40\%$ True Positive rates. The following image is the confusion matrix for Naive Bayes mdoel in the Test set.
 
+![Naive Bayes Conf Matrix](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/conf_matrix_naive.png?raw=true)
+
+We can add more in the discussion, but a quick intuition that this is one of the best that actually predicts what we want to predict, e.g. Pathogenic variants, is that is based in a Probabilistic Framework. Thus, in the following part of the project, we will discuss the results obtained in the Bayesian Networks following a Probabilistic Graphical Model.
 
 #### Understanding the interplay of lines of evidence
- 
-- Bayesian Rule Analysis
+
+- Bayes Rule Analysis
+- Bayesian Networks:
+	- Fully Connected Network
+	- Naive Bayes approach
 - Bayesian Network Latent Variable Model
-- Bayesian Networks
+	- With Latent Variable that can take two values $A,B$
+	- With Latent Variable that can take three values $A,B,C$
 
 
 ### Discussion
