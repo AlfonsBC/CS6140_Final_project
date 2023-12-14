@@ -23,7 +23,7 @@ $$(X_i \perp NonDescendants_{X_i} | Pa^{\mathcal{G}}_{X_i})$$
 Thus, adding a hidden variable acording to expert knowledge will make the contributions from each in-silico predictors independent given the hidden variable, but they will be dependent from both the Latent Variable and the Pathogenicity $Y$ variable. This approach we are going to use using a Latent Variable Model via _Expectation Maximization Algorithm_. The parameters to be learned are the _Conditional Probability Tables_ for each random variable. We are learning a model wth four discrete random variables $Y, L, SAI, REVEL$ as we see in the image bellow.
 
 ### Data set
---
+---
 
 To perform this project, we needed to obtain a data set to predict pathogenicity according to a strict protocol that clinicians and researchers had agreed to which are the following:
 
@@ -62,6 +62,11 @@ We fitted the models with bootstrap data according to reality, to understand the
 We can add more in the discussion, but a quick intuition that this is one of the best that actually predicts what we want to predict, e.g. Pathogenic variants, is that is based in a Probabilistic Framework. Thus, in the following part of the project, we will discuss the results obtained in the Bayesian Networks following a Probabilistic Graphical Model.
 
 ### Understanding the interplay of lines of evidence
+
+Given the literature review such as [Tavtigian et. al 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6336098/)  and [Pejaver et. al 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9748256/), the probabilistic bayesian approach to quantify the strength of evidence is given by the formula:
+
+![equation](https://latex.codecogs.com/svg.image?&space;LR^&plus;(\mathbf{X}=x)=\frac{\text{posterior&space;odds&space;of&space;pathogenicity}}{\textrm{prior&space;odds&space;of&space;pathogenicity}})
+
 
 - Bayes Rule Analysis
 - Bayesian Networks:
