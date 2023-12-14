@@ -11,7 +11,7 @@ Following the 2015 version of the ACMG/AMP guidelines ([Richards et al. 2015](ht
 
 There is a myriad of in-silico tools which design is motivated by the discovery of  novel variants ad hypothesis generation for experimental purposes. The purpose of this project is to consider the two well known computational tools to predict pathogenicity on variants depending on the _splice effect_ SpliceAI and REVEL which is a _mix of protein and splice effect_ on missene variants and meaasure the dependence across strengths of evidence using a probabilistic approach.
 
-In short, the motivation of this project is to find the dependence between two lines of evidence and test the hypothesis that two or more lines of evidence in the code **PP3, BP$** cannot be considered to be the sum of individuals contributions.
+In short, the motivation of this project is to find the dependence between two lines of evidence and test the hypothesis that two or more lines of evidence in the code **PP3, BP4** cannot be considered to be the sum of individuals contributions.
 
 ## Experimentation.
 ---
@@ -39,14 +39,23 @@ In the end, we obtain nearly $21,311$ _Pathogenic/Likely pathogenic variants_ an
 
 ### Results
 ---
-We compared the Bayesian Network method with the classical Machine Learning Models for Binary Classification such as the following methods:
+
+#### Understanding the Problem via Machine Learning
+
+To understand the importance of this project, we first provided of code in the folder `/code/Understand_problem` that builds 4 different Machine Learning Models with data that aligns to reality, where for every missense mutation that is pathogenic or disrups the function of the protein, there are nearly $22.3$ benign variants. We model the binary classification problem with the following 2 classical approaches, one ensemble method and a neural network. 
 
 - Logistic Regression
-- Naive Bayes
-- KNearest Neighbors
-- Support Vector Machine 
-- Decision Tree
-- Multi Layer Perceptron 
+- Naive Bayes 
+- Gradient Boosting Decision Tree
+- Multi Layer Perceptron
+
+We fitted the models with bootstrap data according to reality, to understand the importance of this problem in the area of Machine Learning. First, we use nearly $496,831$ number of boostrap variants to the before mentioned models, and obtained the following results using a standard approach of train/test split of $70\%$ and $30\%$ :
+
+
+
+#### Understanding the interplay of lines of evidence
+ 
+- Bayesian Rule Analysis
 - Bayesian Network Latent Variable Model
 - Bayesian Networks
 
