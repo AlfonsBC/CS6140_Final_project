@@ -51,6 +51,8 @@ To understand the importance of this project, we first provided of code in the f
 
 We fitted the models with bootstrap data according to reality, to understand the importance of this problem in the area of Machine Learning. First, we use nearly $496,831$ number of boostrap variants to the before mentioned models, and obtained the following results using a standard approach of train/test split of $70\%$ and $30\%$ :
 
+![Train/Test Accuracy Model Comparison](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/accuracy_comparison.png?raw=true)
+
 
 
 #### Understanding the interplay of lines of evidence
