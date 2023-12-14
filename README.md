@@ -1,5 +1,10 @@
 # CS6140 Final project
-The following repository contains code and final project report to the project carried out in the course CS6140: Machine Learning in the Fall of 2023 . Primarily, this project uses Probabilistic Graphical Models to predict pathogenicity in Non-synonymous SNPs.
+The following repository contains code and final project report to the project carried out in the course CS6140: Machine Learning in the Fall of 2023. Primarily, this project uses Probabilistic Graphical Models to predict pathogenicity in Non-synonymous SNPs. This project have a `code` folder where focuses on two parts of this project:
+
+a)  `/code/Understand_problem` : Understanding the Problem via Machine Learning
+
+b) `/code/Understand_interplay` : Understand the effect of lines of evidence to predict pathogenicity of variants
+
 
 ## Introduction.
 ---
@@ -85,9 +90,24 @@ The results that we had obtained from the Bayesian Network perspective following
 ## Discussion
 ---
 
+The interesting reults that we get from deriving four machine learning algorithms including: Logistic Regression, Naive Bayes, Gradient Boosting Decision Tree and Multi-layer Perceptron is that in reality they provide of a good approach to predict benign variant. Nevertheless, the rare deseases caused for missense mutations are rare, less than $8\%$ of the population. That means, giving a framework to understand the regions to look at in regards scores to predict pathogenicity and then start building machine learning models to predict based on data is of vital importance. We noted that the best True Positive rate was the Probbilistic approach, which heavily relies on understanding the uncertainty via Probaiblity rules. In addition to have a naive hypothesis that says that the to score predictors are independent given the pathogenicity. But this is not what the data tells as we can see in the table above.
+
+- **Significance of Results** with a User Case:
+
+Suppose we have a variant which gives a REVEL score of $-4$ which will indicate that is a Benign with Very Strong be the strength of evidence. But that same variant, gives a SpliceAI score of $+2$ which means that the variant is highly disruptive. Using Tavtigian framework we are able to obtain the Individual points that a Clinician will use of $-4.9$ for REVEL being $Benign Very Strong (-4)$ and for SpliceAI score will use $2.4$ points fiven the $Pathogenic Moderate (+2)$. Clinician with the current guidelines to predict pathogenicity, will add the points which will be $-2.5$ which will be giving a result of Benign Moderate. But in reality, given the framework from literature review and Bayesian Networks, we are able to understand that that variant actually is a Variant of Uncertain Significance a VUS, as the joint score according to the Probabilities rules would be of $0.5=0$ and $0$ is Inconclusive.
+
+What we can note, is that in the area of a well-known REVEL score from $-1$ to $-4$ that should be benign according to clinicians, but if there is a variant which has a REVEL score of $-1$ and SpliceAI score of $+2$ then that variant will be Pathogenic Very strong with $\infity$ be the maximum of point possible to reach which are $8$ points. The table will help clinicians to predict better using well-known predictors such as REVEL and SpliceAI. We notice that there are independence in the second and third row every three rows as we see in the table, where the predictors give SpliceAI score of $+1,+2$ primarily. 
+
 
 ## Conclusion
 ---
+
+ Primarily, the results from the Fully-connected graphical mode are of vital importance to understand the effect that different lines of evidence within the code $BP4, PP3$ have, and understanding it will play a significant role to predict Pathogenicity in Varaints or Missense Mutations. The results of this project have shown that is necessarry to continue understanding the immmediate effect that the in-silico predictors have between one another to predict pathogenicity of a variant.
+
+
+ Further work will be obtaining multiple predictors of Pathogenicity such as CADD, MutPred2, AlphaMissense, etc to predict Pathogenicity based on the Probabilistic Bayesian Framework of Tavtigian et al. There are a lot of experimantation to be done in the Latent/Hidden Variable Models to understand better the role of dependency that play REVEL and SpliceAI scores to pathogenicity, implementing code to Continuous/Discrete Bayesian Networks with Latent Variables would be an area to further explore as there is difficult to find one programming language that have those required functionalities.
+
+
 
 
 ## References
@@ -97,11 +117,8 @@ The results that we had obtained from the Bayesian Network perspective following
 3. Nir Friedman. 1997. [Learning Belief Networks in the Presence of Missing Values and Hidden Variables.](https://dl.acm.org/doi/10.5555/645526.657145) In Proceedings of the Fourteenth International Conference on Machine Learning (ICML '97). Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 125–133.
 4. Lauritzen, S.L., 1995. [The EM algorithm for graphical association models with missing data.](https://www.stats.ox.ac.uk/~steffen/papers/em95.pdf)Computational statistics & data analysis, 19(2), pp.191-201.
 5. Packages:
-- [bnlearn](https://www.bnlearn.com):  Bayesian Networks in R 
+- [bnlearn](https://www.bnlearn.com):  a packages for Bayesian Network learning and inference in R 
 - [sklearn](https://scikit-learn.org/stable/): Machine Learning in Python
 - [causalnex](https://causalnex.readthedocs.io/en/latest/01_introduction/01_introduction.html): Combining Machine Learning and Bayesian networks for causal reasoning.
- 
-
-
 
 
