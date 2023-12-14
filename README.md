@@ -37,10 +37,10 @@ To perform this project, we needed to obtain a data set to predict pathogenicity
 In the end, we obtain nearly $21,311$ _Pathogenic/Likely pathogenic variants_ and $20,702$ _Benign/Likely benign_ variants. This leads to have a prevalence of pathogenicty close to half percent. Nevertheless, this is not the correct to calculate the prior, that is why we followed closely the literature review with Pejaver et. al. that calculated the prevalence of pathogenicty to be $0.0441$.
 
 
-### Results
+## Results
 ---
 
-#### Understanding the Problem via Machine Learning
+### Understanding the Problem via Machine Learning
 
 To understand the importance of this project, we first provided of code in the folder `/code/Understand_problem` that builds 4 different Machine Learning Models with data that aligns to reality, where for every missense mutation that is pathogenic or disrups the function of the protein, there are nearly $22.3$ benign variants. We model the binary classification problem with the following 2 classical approaches, one ensemble method and a neural network. 
 
@@ -55,13 +55,13 @@ We fitted the models with bootstrap data according to reality, to understand the
 
 ![Train/Test Accuracy Model Comparison](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/accuracy_comparison.png?raw=true)
 
-- Nevertheless, when comparing their respectives confusion matrices, Naive Bayes model approach was the one that obtained the greatest True Positive in the test set with $54\%$, the rest of the models were close to the $40\%$ True Positive rates. The following image is the confusion matrix for Naive Bayes mdoel in the Test set.
+- Nevertheless, when comparing their respectives confusion matrices, Naive Bayes model approach was the one that obtained the greatest True Positive in the test set with $54\%$, the rest of the models were close to the $40\%$ True Positive rates. The following image is the confusion matrix for Naive Bayes model in the Test set.
 
 ![Naive Bayes Conf Matrix](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/conf_matrix_naive.png?raw=true)
 
 We can add more in the discussion, but a quick intuition that this is one of the best that actually predicts what we want to predict, e.g. Pathogenic variants, is that is based in a Probabilistic Framework. Thus, in the following part of the project, we will discuss the results obtained in the Bayesian Networks following a Probabilistic Graphical Model.
 
-#### Understanding the interplay of lines of evidence
+### Understanding the interplay of lines of evidence
 
 - Bayes Rule Analysis
 - Bayesian Networks:
@@ -72,16 +72,15 @@ We can add more in the discussion, but a quick intuition that this is one of the
 	- With Latent Variable that can take three values $A,B,C$
 
 
-### Discussion
+## Discussion
 ---
 
 
-### Conclusion
+## Conclusion
 ---
 
-1. Project documentation 
 
-### References
+## References
 ---
 
 
