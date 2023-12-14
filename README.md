@@ -69,19 +69,18 @@ Given the literature review such as [Tavtigian et. al 2018](https://www.ncbi.nlm
 
 
 - Bayesian Networks: 
-	- Fully Connected Network: The Graphical model trained with the bootstraped data with a fully-connected network was the following:
-
-![FC_network](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/FC_model.png?raw=true)
-
+	- Fully Connected Network: The Graphical model trained with the bootstraped data with a fully-connected network was the following: ![FC_network](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/FC_model.png?raw=true)
+	
 	- Naive Bayes approach: The Graphical model trained with a naive assumption that the two predictors are independent from each other is the following:
 ![NB_network](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/NB_model.png?raw=true)
 
 - Bayesian Network Latent Variable Model
-	- With Latent Variable that can take two values $A,B$:
+	- With Latent Variable that can take two values $A,B$ using Expectation-Maximization algorithm that solves a higly complex non-linear optimization for the likelihood function:
 ![Latent_newtork](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/BN_proposed.png?raw=true)
 
 
-
+The results that we had obtained from the Bayesian Network perspective following the Bayesian approach from Tavtigian et al. 2018, gives us understanding in each of the pieces of evidence given the revel score and provide with scores SpliceAI and Revel, where in different regions the sum of their contributions are independent, but in other regions their sum of their points is not equal to the contributed by both. Meaning that this regions are dependent. In the following image, we plot the main results from our Bayesian Network perspective:
+![Main_results](https://github.com/AlfonsBC/CS6140_Final_project/blob/master/images/results.jpg?raw=true)
 
 ## Discussion
 ---
